@@ -1,17 +1,28 @@
 import React from 'react';
 import Footer from "./footer";
-// import Footer from "./footer";
-// import onClickCheckBox from "./checkbox";
+import ContactCard from "./ContactCard";
+import InfoList from "./listData";
 
 function TestApp() {
 
+    const index = "01";
     const country = ['Korea', 'Japan', 'USA'];
     const countryList = country.map(country =>
         // expression goes here:
         <li>{country}</li>
     );
+    const testComponents = InfoList.map(info =>
+        <ContactCard
+            name ={info.name}
+            imgUrl = {info.imgUrl}
+            phone={info.phone}
+            email={info.email}
+        />
+    );
     return (
         <div>
+            {testComponents}
+            <span>{index}</span>
             <span>{countryList}</span>
             <Footer/>
         </div>
