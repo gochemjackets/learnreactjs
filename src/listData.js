@@ -1,4 +1,4 @@
-const InfoList = [
+const infoList = [
     {
         id: 1,
         name: "Mr. American",
@@ -21,4 +21,4 @@ const InfoList = [
         email: "hellocatt@google.com"
     }
 ];
-export default InfoList
+export default infoList
